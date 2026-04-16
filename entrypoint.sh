@@ -7,9 +7,7 @@ fi
 
 cat > /tmp/mtg.toml <<EOF
 secret = "${MTG_SECRET}"
-
-[bind]
-address = "0.0.0.0:8443"
+bind-to = "0.0.0.0:8443"
 EOF
 
 echo "Starting mtg on 0.0.0.0:8443"
