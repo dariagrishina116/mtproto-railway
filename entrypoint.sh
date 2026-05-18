@@ -8,6 +8,10 @@ fi
 cat > /tmp/mtg.toml <<EOF
 secret = "${MTG_SECRET}"
 bind-to = "0.0.0.0:8443"
+prefer-ip = "prefer-ipv4"
+
+[network]
+doh-ip = "1.1.1.1"
 EOF
 
 echo "Starting mtg on 0.0.0.0:8443"
